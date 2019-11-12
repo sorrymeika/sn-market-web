@@ -12,3 +12,8 @@ exports.validate = {
     enable: true,
     package: 'egg-validate',
 };
+
+// exports.snauth = {
+//     enable: true,
+//     package: 'egg-sn-auth',
+// };

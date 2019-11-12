@@ -51,13 +51,14 @@ exports.cors = {
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
 };
 
-exports.middleware = ['auth', 'gzip'];
+// exports.middleware = ['gzip'];
+// exports.gzip = {
+//     threshold: 2048,
+// };
 
 exports.auth = {
-    enable: false,
-    excludes: []
-};
-
-exports.gzip = {
-    threshold: 2048,
+    registry: {
+        port: 3006
+    },
+    permissions: require('./permissions'),
 };

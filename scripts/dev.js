@@ -7,3 +7,4 @@ const ln = (moduleName) => {
 };
 
 ln('sonorpc');
+ln('egg-sn-auth');

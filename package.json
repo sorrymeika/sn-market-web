@@ -28,8 +28,8 @@
   },
   "scripts": {
     "dev": "node scripts/dev.js && egg-bin dev --port 7002",
-    "start": "node scripts/ln-deps.js && egg-scripts start --port=7004 --daemon",
-    "stop": "egg-scripts stop",
+    "start": "egg-scripts start --port=7002 --daemon --title=egg-sn-market-web",
+    "stop": "egg-scripts stop --title=egg-sn-market-web",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
